@@ -905,3 +905,7 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+p{
+  font-size: 1.1rem;
+}
