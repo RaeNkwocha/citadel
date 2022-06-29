@@ -84,6 +84,12 @@
         width: 100%;
       }
     }
+    @media only screen and (max-width: 912px) {
+      .mobile-nav-bar {
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
   </style>
 
   <body class="sub_page">
@@ -92,21 +98,30 @@
       <header class="header_section">
         <div class="container">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
-              <img src="./images/citadel-logo.png" width="50%" />
-            </a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+            <div
+              class="mobile-nav-bar"
+              style="display: flex; align-items: center"
             >
-              <span class=""> </span>
-            </button>
+              <div>
+                <a class="navbar-brand" href="index.html">
+                  <img src="./images/citadel-logo.png" width="50%" />
+                </a>
+              </div>
+
+              <div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class=""> </span>
+                </button>
+              </div>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
@@ -199,7 +214,7 @@
         <div class="row" style="gap: 1rem">
           <div class="col-sm">
             <div>
-              <img src="./images/choose_u.jpg" width="100%" />
+              <img src="./images/Project Management (2).jpg" width="100%" />
             </div>
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span>Project Management</span>
@@ -208,7 +223,7 @@
           </div>
           <div class="col-sm">
             <div>
-              <img src="./images/choose_u.jpg" width="100%" />
+              <img src="./images/Data Management (2).jpg" width="100%" />
             </div>
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span style="text-transform: capitalize">Data Management</span>
@@ -216,7 +231,7 @@
             <div style="border-bottom: 1px solid lightgray"></div>
           </div>
           <div class="col-sm">
-            <img src="./images/choose_u.jpg" width="100%" />
+            <img src="./images/Clinical operations.jpg" width="100%" />
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span>Clinical Operations</span>
             </div>
@@ -228,14 +243,14 @@
         </div>
         <div class="row" style="margin-top: 30px">
           <div class="col-sm">
-            <img src="./images/choose_u.jpg" width="100%" />
+            <img src="./images/quality assurance.jpg" width="100%" />
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span> Quality Assurance</span>
             </div>
             <div style="border-bottom: 1px solid lightgray"></div>
           </div>
           <div class="col-sm">
-            <img src="./images/choose_u.jpg" width="100%" />
+            <img src="./images/Phamacovigilance.jpg" width="100%" />
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span>Phamacovigilance</span>
             </div>
@@ -243,7 +258,7 @@
           </div>
 
           <div class="col-sm">
-            <img src="./images/choose_u.jpg" width="100%" />
+            <img src="./images/last one.jpg" width="100%" />
             <div style="margin-top: 20px; margin-bottom: 20px">
               <span>Phamacovigilance</span>
             </div>
