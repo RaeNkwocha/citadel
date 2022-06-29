@@ -41,7 +41,16 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
-
+  <style>
+    .footer-img {
+      width: 50%;
+    }
+    @media only screen and (min-width: 768px) {
+      .footer-img {
+        width: 100%;
+      }
+    }
+  </style>
   <body class="sub_page">
     <div class="hero_area">
       <!-- header section strats -->
@@ -49,7 +58,7 @@
         <div class="container">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
-              <span> CITADEL CLINICAL RESEARCH </span>
+              <img src="./images/citadel-logo.png" width="50%" />
             </a>
 
             <button
@@ -149,10 +158,10 @@
               </div>
               <p>
                 At citadel clinical research, we take the time to get to know
-                you and develop a deep understanding of your Citadel clinical
-                research before we place any candidates with you. We offer our
-                absolute best with every placement and only deliver top
-                candidates we have complete confidence in. <br />
+                you and develop a deep understanding of your company before we
+                place any candidates with you. We offer our absolute best with
+                every placement and only deliver top candidates we have complete
+                confidence in. <br />
                 <br />We match every client with the best available talent pool.
                 With a network of connections that’s taken effort to build, we
                 have unmatched leverage when it comes to our resources and
@@ -178,7 +187,7 @@
           "
         >
           <h3 style="font-weight: bolder">
-            Why recruit with citadel clinical research ?
+            Why recruit with Citadel Clinical Research ?
           </h3>
           <div>
             <div style="text-align: center; margin-top: 15px">
@@ -227,7 +236,12 @@
     <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
-        <div class="row">
+        <div class="row" style="align-items: center; gap: 2rem">
+          <div class="col-md-6 col-lg-3 footer_col">
+            <div>
+              <img src="./images/citadel-logo.png" class="footer-img" alt="" />
+            </div>
+          </div>
           <div class="col-md-6 col-lg-3 footer_col">
             <div class="footer_contact">
               <h4>Reach at..</h4>
@@ -261,6 +275,7 @@
               </a>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-3 footer_col">
             <div class="footer_detail">
               <h4>About</h4>
@@ -275,20 +290,13 @@
             <div class="footer_link_box">
               <h4>Links</h4>
               <div class="footer_links">
-                <a class="" href="index.html"> Home </a>
-                <a class="active" href="about.html"> About </a>
+                <a class="active" href="index.html"> Home </a>
+                <a class="" href="about.html"> About </a>
                 <a class="" href="departments.html"> Departments </a>
                 <a class="" href="doctors.html"> Doctors </a>
                 <a class="" href="contact.html"> Contact Us </a>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 footer_col">
-            <h4>Newsletter</h4>
-            <form action="#">
-              <input type="email" placeholder="Enter email" />
-              <button type="submit">Subscribe</button>
-            </form>
           </div>
         </div>
         <div class="footer-info">
