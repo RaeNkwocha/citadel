@@ -82,19 +82,29 @@
     .employers-grid img {
       width: 100%;
     }
+    .employers-about-holder {
+      padding: 10px;
+      width: 100%;
+    }
     @media only screen and (min-width: 912px) {
       .footer-img {
         width: 100%;
       }
       .employers-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
-        width: 75%;
-        gap: 1rem;
         align-items: center;
+        grid-template-columns: 50% 50%;
+        width: 100%;
       }
       .employers-grid img {
-        width: 100%;
+        width: 90%;
+      }
+      .employers-about-holder {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -104,16 +114,23 @@
         width: 100%;
       }
     }
-    @media only screen and (min-width: 1920px) {
+    @media only screen and (min-width: 1936px) {
       .employers-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
-        width: 53%;
-        gap: 1rem;
+        grid-template-columns: repeat(1fr, 2);
         align-items: center;
+        width: 100%;
       }
       .employers-grid img {
-        width: 100%;
+        max-width: 60%;
+        margin-right: -220px;
+      }
+      .employers-about-holder {
+        display: flex;
+        margin: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
       }
     }
   </style>
@@ -235,11 +252,9 @@
       >
         Employers
       </h1>
-      <div
-        style="display: grid; place-items: center; width: 100%; padding: 10px"
-      >
+      <div class="employers-about-holder">
         <div class="employers-grid">
-          <div>
+          <div style="display: grid; place-items: center">
             <img src="./images/istockphoto-1302423098-170667a 1.png" alt="" />
           </div>
           <div>
