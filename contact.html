@@ -45,9 +45,49 @@
     .footer-img {
       width: 50%;
     }
-    @media only screen and (min-width: 768px) {
+    #row {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+    }
+    .form-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 50px;
+    }
+    @media only screen and (min-width: 912px) {
       .footer-img {
         width: 100%;
+      }
+      #row {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+      }
+      .float {
+        float: right;
+      }
+      .border-un {
+        display: block;
+        border-bottom: 1px solid rgb(203, 203, 203);
+        margin-bottom: 30px;
+        width: 75%;
+      }
+      .border-un-two {
+        display: block;
+        border-bottom: 1px solid rgb(203, 203, 203);
+        margin-bottom: 30px;
+        width: 65%;
+      }
+      .border-un-three {
+        display: block;
+        border-bottom: 1px solid rgb(203, 203, 203);
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      .form-container {
+        padding-left: 100px;
+        padding-right: 100px;
       }
     }
     @media only screen and (max-width: 912px) {
@@ -172,10 +212,7 @@
         <h1 style="color: white; margin-top: 100px">Contact Us</h1>
       </div>
     </div>
-    <div
-      class="row"
-      style="padding-left: 100px; padding-right: 100px; padding-top: 50px"
-    >
+    <div class="row" id="row">
       <div class="col-md-6">
         <div>
           <h2 style="font-weight: bolder; margin-bottom: 20px">Get In Touch</h2>
@@ -197,41 +234,20 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div style="float: right">
-          <div
-            style="
-              display: block;
-              border-bottom: 1px solid rgb(203, 203, 203);
-              margin-bottom: 30px;
-              width: 75%;
-            "
-          >
+        <div class="float">
+          <div class="border-un">
             <label style="font-size: 1.3rem; font-weight: bold">
               Address
             </label>
             <h6>90 Canal St, Boston, MA 02114</h6>
           </div>
-          <div
-            style="
-              display: block;
-              border-bottom: 1px solid rgb(203, 203, 203);
-              margin-bottom: 30px;
-              width: 65%;
-            "
-          >
+          <div class="border-un-two">
             <label style="font-size: 1.3rem; font-weight: bold">
               Phone Number
             </label>
             <h6>(617) 694-1518</h6>
           </div>
-          <div
-            style="
-              display: block;
-              border-bottom: 1px solid rgb(203, 203, 203);
-              margin-bottom: 30px;
-              width: 100%;
-            "
-          >
+          <div class="border-un-three">
             <label style="font-size: 1.3rem; font-weight: bold"> Email </label>
             <h6>info@citadelclinicalresearch.com</h6>
           </div>
@@ -239,7 +255,7 @@
       </div>
     </div>
     <section class="contact_section">
-      <div style="padding-left: 100px; height: 100%; padding-right: 100px">
+      <div class="form-container">
         <div class="row">
           <div class="col-md-6" style="margin-top: 0px">
             <div class="form_container contact-form">
