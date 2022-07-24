@@ -82,34 +82,42 @@
     .employers-grid img {
       width: 100%;
     }
-    .text-holder-emp{
+    .text-holder-emp {
       width: 100%;
       padding: 0px 10px;
     }
-    .new-text-hld{
-    
+    .new-text-hld {
       width: 100%;
     }
 
+    .em-img {
+      width: 100%;
+    }
     @media only screen and (min-width: 912px) {
       .footer-img {
         width: 100%;
       }
-      .text-holder-emp{
-      width: 100%;
-      padding: 0px 50px;
+      .text-holder-emp {
+        width: 100%;
+        padding: 0px 50px;
+      }
+
+      .new-text-hld {
+        width: 100%;
+      }
+      .em-img {
+        width: 95%;
+        height: 280px;
+      }
     }
-  
-    .new-text-hld{
-      width: 100%;
-    }
-    }
-   
 
     @media only screen and (max-width: 912px) {
       .mobile-nav-bar {
         justify-content: space-between;
         width: 100%;
+      }
+      .em-txt {
+        margin-top: 50px;
       }
     }
     @media only screen and (min-width: 1639px) {
@@ -117,16 +125,15 @@
         justify-content: space-between;
         width: 100%;
       }
-      .text-holder-emp p{
-      font-size: 1.3vw;
-    }
-      .text-holder-emp{
-      font-size: 1.3vw;
-    }
-    .new-try{
-      font-size: 1.3vw;
-
-    }
+      .text-holder-emp p {
+        font-size: 1.3vw;
+      }
+      .text-holder-emp {
+        font-size: 1.3vw;
+      }
+      .new-try {
+        font-size: 1.3vw;
+      }
     }
   </style>
 
@@ -247,22 +254,29 @@
       >
         Employers
       </h1>
-      <div class="new-text-hld">
-          <div class="text-holder-emp">
-            <p>
-              We provide solutions in several types of employment relationships:
-            </p>
-            <ul>
-              <li>Long-term & Short-term Projects</li>
-              <li>FSP</li>
-              <li>Consultants</li>
-              <li>Direct Placement</li>
-            </ul>
-            <p>
-              Citadel clinical researchname is your eyes and ears to the
-              candidate marketplace. That extra level of service postures us as
-              your resource in making the best hiring decisions.
-            </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/employers.jpg" class="em-img" alt="" />
+          </div>
+          <div class="col-md-6">
+            <div class="em-txt">
+              <p>
+                We provide solutions in several types of employment
+                relationships:
+              </p>
+              <ul>
+                <li>Long-term & Short-term Projects</li>
+                <li>FSP</li>
+                <li>Consultants</li>
+                <li>Direct Placement</li>
+              </ul>
+              <p>
+                Citadel clinical research is your eyes and ears to the candidate
+                marketplace. That extra level of service postures us as your
+                resource in making the best hiring decisions.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -283,7 +297,7 @@
             class="row"
             style="align-items: center; background-color: #178066; color: white"
           >
-            <div class="col-sm">
+            <div class="col-md-6">
               <img
                 src="./images/employers_2.jpg
                       "
@@ -292,7 +306,7 @@
               />
             </div>
             <div
-              class="col-sm"
+              class="col-md-6"
               style="
                 padding-right: 30px;
                 padding-left: 30px;
@@ -337,46 +351,18 @@
     <!-- end about section -->
 
     <!-- footer section -->
-    <footer class="footer_section" style="margin-top: 20px">
-      <div class="container">
-        <div class="row" style="align-items: center; gap: 2rem">
+    <footer class="footer_section">
+      <div style="padding: 50px">
+        <div
+          class="row"
+          style="align-items: center; gap: 1rem; justify-content: space-between"
+        >
           <div class="col-md-6 col-lg-3 footer_col">
             <div>
               <img src="./images/citadel-logo.png" class="footer-img" alt="" />
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 footer_col">
-            <div class="footer_contact">
-              <h4>Reach at..</h4>
-              <div class="contact_link_box">
-                <a href="">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>Address - 90 Canal St, Boston, MA 02114</span>
-                </a>
-                <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Phone Number - (617) 694-1518 </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span> info@citadelclinicalresearch.com </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 footer_col">
-            <div class="footer_detail">
-              <h4>About</h4>
-              <p>
-                Citadel Clinical Research is committed to serving our clients by
-                providing the highest quality professionals to not only meet but
-                exceed the expectations of the healthcare organizations we work
-                with!
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="col-md-6 col-lg-1 mx-auto footer_col">
             <div class="footer_link_box">
               <h4>Links</h4>
               <div class="footer_links">
@@ -388,11 +374,51 @@
               </div>
             </div>
           </div>
+          <div class="col-md-6 col-lg-3 footer_col">
+            <div class="footer_detail">
+              <h4>Company</h4>
+              <p>
+                Citadel Clinical Research is committed to serving our clients by
+                providing the highest quality professionals to not only meet but
+                exceed the expectations of the healthcare organizations we work
+                with!
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 footer_col">
+            <div class="footer_contact">
+              <h4>Contact Us</h4>
+              <div class="footer_detail">
+                <p>
+                  Our experienced team of healthcare industry recruiters are
+                  ready and waiting to help you find the top talent for your
+                  healthcare organization/ team. Have questions about how we can
+                  help, don’t hesitate to contact us!
+                </p>
+              </div>
+              <div style="margin-top: 30px; display: grid">
+                <a
+                  href="/contact.html"
+                  style="
+                    color: white;
+                    padding: 10px;
+                    background: #62d2a2;
+                    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+                      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+                    text-align: center;
+                    font-size: 1.3rem;
+                  "
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
         <div class="footer-info">
           <p>
             &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Citadel Clinical Research</a>
+            <a>Citadel Clinical Research</a>
           </p>
         </div>
       </div>
