@@ -38,6 +38,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
@@ -65,6 +66,11 @@
           width: 100%;
           height: 280px;
         }
+    }
+    @media only screen and (max-width: 767px) {
+   #margin-top-mobile{
+    margin-top: 100px;
+   }
     }
 
  
@@ -499,61 +505,73 @@
     <!-- end client section -->
 
     <!-- footer section -->
-    <footer class="footer_section">
-      <div style="padding:30px 50px">
-        <div class="row" style="align-items: center; gap:1rem ;justify-content: space-between;">
-          <div class="col-md-6 col-lg-3 footer_col">
-            <div><img src="./images/citadel-logo.png" class="footer-img"  alt=""/></div>
-            </div>
-            <div class="col-md-6 col-lg-1 mx-auto footer_col">
-              <div class="footer_link_box">
-                <h4>Links</h4>
-                <div class="footer_links">
-                  <a class="active" href="index.html"> Home </a>
-                  <a class="" href="about.html"> About </a>
-                  <a class="" href="employers.html"> Employers </a>
-                  <a class="" href="candidates.html"> Candidates </a>
-                  <a class="" href="our-services.html">Our Services </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 footer_col">
-              <div class="footer_detail">
-                <h4>Company</h4>
-                <p>
-                  Citadel Clinical Research is committed to serving our clients by
-                  providing the highest quality professionals to not only meet but
-                  exceed the expectations of the healthcare organizations we work
-                  with!
-                </p>
-              </div>
-            </div>
-
-          <div class="col-md-6 col-lg-3 footer_col">
-            <div class="footer_contact">
-              <h4>Contact Us</h4>
-              <div class="footer_detail">
-                <p>
-                  Our experienced team of healthcare industry recruiters are ready and waiting to help you find the top talent for your healthcare organization/ team. Have questions about how we can help, don’t hesitate to contact us!
-                </p>
-              </div>
-              <div style="margin-top: 30px;display: grid;"><a href="/contact.html" style="color:white;padding:10px;background: #62D2A2;box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;text-align: center;font-size: 1.3rem;">Contact Us</a></div>
-            </div>
-            
-          </div>
-       
-
-        
-         
-        </div>
-        <div class="footer-info">
-          <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a>Citadel Clinical Research</a>
-          </p>
-        </div>
+    <footer class="footer">
+      <div class="container ">
+      <div class="row" >
+      <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+        <div>
+          <img style=" width: 100%;
+          position: absolute;
+          top: 30%;
+          left: 0%;" src="./images/citadel-logo.png" class="footer-img" alt="" />
+        </div>   
+      
+      
       </div>
-    </footer>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col" id="margin-top-mobile">
+      <h5 class="headin5_amrc col_white_amrc pt2">Links</h5>
+      <!--headin5_amrc-->
+      <ul class="footer_ul_amrc">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="employers.html">Employers</a></li>
+      <li><a href="candidates.html">Candidates</a></li>
+      <li><a href="our-services.html">Our Services</a></li>
+      </ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md  col-6 col" id="margin-top-mobile">
+      <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
+      <!--headin5_amrc-->
+      <ul class="footer_ul2_amrc">
+
+      <p class="mb10">Citadel Clinical Research is committed to serving our clients by providing the highest quality professionals to not only meet but exceed the expectations of the healthcare organizations we work with!</p>
+</ul>
+      <!--footer_ul_amrc ends here-->
+      </div>
+      
+      
+      <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+        <!--headin5_amrc-->
+        <p class="mb10">Our experienced team of healthcare industry recruiters are ready and waiting to help you find the top talent for your healthcare organization/ team. Have questions about how we can help, don’t hesitate to contact us!</p>
+      <div style="display: grid;"><a   href="/contact.html"
+        style="
+          color: white;
+          padding: 10px;
+          background: #62d2a2;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+            rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          text-align: center;
+          font-size: 1.3rem;
+        ">Contact US</a>
+        </div>
+        
+        
+        </div>
+      
+      </div>
+      </div>
+      
+      
+  
+      
+      </footer>
+      
     <!-- footer section -->
 
     <!-- jQery -->
